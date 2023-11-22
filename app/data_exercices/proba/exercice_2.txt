@@ -1,0 +1,33 @@
+$-----$
+ENONCE
+$-----$
+Une installation électrique correctement conçue est protégée par des fusibles
+dont la valeur limite est donnée en ampères (A).
+La valeur limite d'un fusible est proporionnelle à la puissance maximale 
+en watts (W) supportée par l'installation.
+Ainsi un fusible de 16A peut supporter une puissance maximale de 3500W
+$-----$
+QUESTION 1
+$-----$
+Quelle puissance maximale peut supporter un fusible de 30 A ?
+$-----$
+QUESTION 2
+$-----$
+Quelle doit être la valeur limite d'un fusible pour une puissance maximale de 5250 W ?
+$-----$
+REPONSE 1
+$-----$
+D'après l'énoncé, la valeur limite d'un fusible est proporionnelle à la puissance maximale
+d'où 3500 / 16 = P_max / 30
+P_max = 3500 * 30 / 16 
+P_max = 6562.5
+Donc la puissance maximale pour un fusible de 30 A est de 6562.5 W
+$-----$
+REPONSE 2
+$-----$
+D'après l'énoncé, la valeur limite d'un fusible est proporionnelle à la puissance maximale
+d'où 3500 / 16 = 5250 / V_lim
+V_lim = 5250 * 16 / 3500
+V_lim = 24
+Donc la valeur limite d'un fusible pour une puissance maximale de 5250 W est de 24 A
+$-----$

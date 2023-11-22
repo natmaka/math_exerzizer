@@ -1,4 +1,4 @@
-name: solgard-bot-last-refactoring
+name: math_exerzizer
 on:
   push:
     branches: [main]

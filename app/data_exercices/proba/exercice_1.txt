@@ -1,0 +1,19 @@
+$-----$
+ENONCE
+$-----$
+Un automobilsite n'échappe pas aux lois de la physique.
+Ainsi la force d'impact d'un véhicule lancé à 120 km/h
+est 16 fois plus grande que celle d'un véhicule
+qui roule à 30 km/h.
+$-----$
+QUESTION 1
+$-----$
+La force d'impact d'un véhicule est-elle proporionnelle à sa vitesse ?
+$-----$
+REPONSE 1
+$-----$
+120/30 = 4
+De 30 km/h à 120 km/h la vitesse est multipliée par 4
+Or la force est multipliée par 16 qui n'est pas égale à 4
+Donc ce n'est pas une situation de proportionnalité
+$-----$
