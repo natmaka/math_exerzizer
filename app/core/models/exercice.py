@@ -24,8 +24,8 @@ class Exercice:
 
         return cls(enonce=enonce, questions=questions, reponses=reponses)
 
-    def to_openai_prompt(self):
-        """Return a prompt string"""
+    def to_openai_prompt(self) -> OpenAiMessage:
+        """Return a prompt to send to openai"""
 
         content = StringIO()
         content.write("Voici un exemple d'exercice de mathématiques:\n")
