@@ -1,8 +1,10 @@
 """Exercice model"""
 from dataclasses import dataclass
+from io import StringIO
 from typing import Generator
 from app.adapters.file_read import read_file
-from app.core.app_types import PathLike, FileItem
+from app.core.app_types import OpenAiMessage, PathLike, FileItem
+from app.core.constants import UNDERLINE
 
 
 @dataclass
@@ -21,6 +23,20 @@ class Exercice:
         reponses = [item.content for item in data_parsed if "REPONSE" in item.title]
 
         return cls(enonce=enonce, questions=questions, reponses=reponses)
+
+    def to_openai_prompt(self):
+        """Return a prompt string"""
+
+        content = StringIO()
+        content.write("Voici un exemple d'exercice de mathématiques:\n")
+        content.write(f"{UNDERLINE}DEBUT DE L'EXERCICE\n{UNDERLINE}")
+        content.write(f"ENONCE\n{UNDERLINE}{self.enonce}\n")
+        for index, (question, reponse) in enumerate(zip(self.questions, self.reponses)):
+            content.write(f"QUESTION_{index+1}\n{UNDERLINE}{question}\n")
+            content.write(f"REPONSE_{index+1}\n{UNDERLINE}{reponse}\n")
+        content.write(f"{UNDERLINE}FIN DE L'EXERCICE\n{UNDERLINE}")
+
+        return OpenAiMessage(role="system", content=content.getvalue())
 
 
 @dataclass

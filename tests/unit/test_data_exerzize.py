@@ -57,3 +57,52 @@ def test_exercice_builder():
     reponses_tuple = zip(exercice.reponses, expected_result.reponses)
 
     assert all(reponse == expected for reponse, expected in reponses_tuple)
+
+
+def test_exercice_to_openai_prompt():
+    """Test the exercice to openai prompt"""
+
+    parser_result = [
+        FileItem(title="ENONCE", content="test1\nazerty\nabc"),
+        FileItem(title="QUESTION 1", content="test2"),
+        FileItem(title="QUESTION 2", content="test3"),
+        FileItem(title="REPONSE 1", content="test4"),
+        FileItem(title="REPONSE 2", content="test5\ntest6"),
+    ]
+
+    expected_role = "system"
+
+    expected_content = (
+        "Voici un exemple d'exercice de mathématiques:\n"
+        "-------\n"
+        "DEBUT DE L'EXERCICE\n"
+        "-------\n"
+        "ENONCE\n"
+        "-------\n"
+        "test1\n"
+        "azerty\n"
+        "abc\n"
+        "QUESTION_1\n"
+        "-------\n"
+        "test2\n"
+        "REPONSE_1\n"
+        "-------\n"
+        "test4\n"
+        "QUESTION_2\n"
+        "-------\n"
+        "test3\n"
+        "REPONSE_2\n"
+        "-------\n"
+        "test5\ntest6\n"
+        "-------\n"
+        "FIN DE L'EXERCICE\n"
+        "-------\n"
+    )
+
+    exercice = Exercice.from_file(data_parsed=parser_result)
+
+    content_to_test = exercice.to_openai_prompt().get("content")
+    role_to_test = exercice.to_openai_prompt().get("role")
+
+    assert role_to_test == expected_role
+    assert content_to_test == expected_content
