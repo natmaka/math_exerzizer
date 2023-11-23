@@ -2,6 +2,8 @@ $-----$
 ENONCE
 $-----$
 test1
+azerty
+abc
 $-----$
 QUESTION 1
 $-----$
@@ -18,4 +20,5 @@ $-----$
 REPONSE 2
 $-----$
 test5
+test6
 $-----$
