@@ -20,3 +20,19 @@ def read_file(file_path: PathLike) -> list[str]:
         lines = f.readlines()
 
     return lines
+
+
+def save_file(file_path: PathLike, content: str) -> None:
+    """
+    Save a file with the given content
+
+    Parameters
+    ----------
+    file_path : PathLike
+        path to the file to save
+    content : str
+        content to save in the file
+    """
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(content)

@@ -1,3 +1,4 @@
+"""Prompt builder"""
 from io import StringIO
 from typing import Literal
 from app.core.app_types import OpenAiMessage, SecurePrompt

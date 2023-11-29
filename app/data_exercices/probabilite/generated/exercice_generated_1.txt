@@ -1,0 +1,35 @@
+-------
+DEBUT DE L'EXERCICE 
+-------
+ENONCE
+-------
+Dans une école, on propose à tous les élèves qui participent à une compétition sportive une quantité d'eau propotionnelle au nombre d'heures d'effort prévues.
+Ainsi pour 1h d'effort, on donne 0.5 litres d'eau.  
+  
+QUESTION_1
+-------
+Quelle quantité d'eau doit-on prévoir pour un élève qui va faire un effort de 2h30 ?
+
+REPONSE_1
+-------
+D'après l'énoncé, la quantité d'eau est propotionnelle aux heures d'effort
+d'où 0.5 / 1 = Q / 2.5
+Q = 0.5 * 2.5
+Q = 1.25
+Donc pour un effort de 2h30, un élève aura besoin de 1,25 litres d'eau.  
+
+QUESTION_2
+-------
+Si un élève a besoin de 2 litres d'eau, combien d'heure d'effort va-t-il faire ?
+
+REPONSE_2
+-------
+D'après l'énoncé, la quantité d'eau est propotionnelle aux heures d'effort
+d'où 0.5 / 1 = 2 / H
+H = 2 * 1 / 0.5
+H = 4
+Donc si un élève a besoin de 2 litres d'eau, cela signifie qu'il va faire 4 heures d'effort.
+
+-------
+FIN DE L'EXERCICE
+-------
