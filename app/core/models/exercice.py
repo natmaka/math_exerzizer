@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from io import StringIO
 from typing import Generator
 from app.adapters.file_read import read_file
-from app.core.app_types import OpenAiMessage, PathLike, FileItem
+from app.core.app_types import OpenAiMessage, PathLike, FileItem, SecurePrompt
 from app.core.constants import UNDERLINE
 
 
@@ -36,7 +36,9 @@ class Exercice:
             content.write(f"REPONSE_{index+1}\n{UNDERLINE}{reponse}\n")
         content.write(f"{UNDERLINE}FIN DE L'EXERCICE\n{UNDERLINE}")
 
-        return OpenAiMessage(role="system", content=content.getvalue())
+        secure_prompt = SecurePrompt(role="system", content=content.getvalue())
+
+        return secure_prompt.prompt
 
 
 @dataclass

@@ -105,4 +105,4 @@ def test_exercice_to_openai_prompt():
     role_to_test = exercice.to_openai_prompt().get("role")
 
     assert role_to_test == expected_role
-    assert content_to_test == expected_content
+    assert expected_content in content_to_test
