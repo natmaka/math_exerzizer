@@ -1,0 +1,35 @@
+-------
+DEBUT DE L'EXERCICE
+-------
+ENONCE
+-------
+Un peintre met 3 heures pour peindre une surface de 9 m² avec une certaine peinture.
+Le temps nécessaire pour peindre est proportionnel à la surface à peindre.
+
+QUESTION_1
+-------
+Combien de temps faudra-t-il pour peindre une surface de 15 m² avec la même peinture?
+
+REPONSE_1
+-------
+D'après l'énoncé, le temps nécessaire pour peindre est proportionnel à la surface à peindre.
+Donc 3/9 = T/15
+T = 15*3/9
+T = 5
+Donc il faudra 5 heures pour peindre une surface de 15 m² avec la même peinture.
+
+QUESTION_2
+-------
+Quelle est la surface qu'il pourra peindre en 6 heures avec la même peinture?
+
+REPONSE_2
+-------
+D'après l'énoncé, le temps nécessaire pour peindre est proportionnel à la surface à peindre.
+Donc 3/9 = 6/S
+S = 6*9/3
+S = 18
+Donc il pourra peindre une surface de 18 m² en 6 heures avec la même peinture.
+
+-------
+FIN DE L'EXERCICE
+-------

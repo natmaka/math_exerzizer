@@ -49,6 +49,7 @@ class PromptBuider:
         role_prompt = StringIO()
         role_prompt.write(f"TON ROLE/n{UNDERLINE}")
         role_prompt.write("Tu dois générer des exercices de mathématiques.\n")
+        role_prompt.write("Destinés à des élèves de 4ème (13ans)\n")
         role_prompt.write(f"Tu dois générer des exercices sur le thème: {self.theme}\n")
 
         secure_prompt = SecurePrompt(role="system", content=role_prompt.getvalue())
@@ -60,7 +61,7 @@ class PromptBuider:
 
         format_prompt = StringIO()
         format_prompt.write(f"FORMAT DES EXERCICES\n{UNDERLINE}")
-        format_prompt.write("Tu dois respecter le format suivant:\n")
+        format_prompt.write("$ DEBUT DE L'EXEMPLE DE FORMAT $\n")
         format_prompt.write(f"{UNDERLINE}DEBUT DE L'EXERCICE\n{UNDERLINE}")
         format_prompt.write(f"ENONCE\n{UNDERLINE}L'énoncé de l'exercice\n")
         format_prompt.write(f"QUESTION_1\n{UNDERLINE}La question 1\n")
@@ -71,6 +72,7 @@ class PromptBuider:
         format_prompt.write(f"QUESTION_i\n{UNDERLINE}La question i\n")
         format_prompt.write(f"REPONSE_i\n{UNDERLINE}La réponse i\n")
         format_prompt.write(f"{UNDERLINE}FIN DE L'EXERCICE\n{UNDERLINE}")
+        format_prompt.write("$ FIN DE L'EXEMPLE DE FORMAT $\n")
 
         secure_prompt = SecurePrompt(role="system", content=format_prompt.getvalue())
 
