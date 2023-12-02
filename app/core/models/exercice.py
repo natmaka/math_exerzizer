@@ -1,9 +1,10 @@
 """Exercice model"""
+import re
 from dataclasses import dataclass
 from io import StringIO
 from typing import Generator
 from app.adapters.file_read import read_file
-from app.core.app_types import OpenAiMessage, PathLike, FileItem, SecurePrompt
+from app.core.app_types import EncapsulatePrompt, OpenAiMessage, PathLike, FileItem
 from app.core.constants import UNDERLINE
 
 
@@ -14,6 +15,7 @@ class Exercice:
     enonce: str
     questions: list[str]
     reponses: list[str]
+    explications: list[str]
 
     @classmethod
     def from_file(cls, data_parsed=list[FileItem]):
@@ -21,22 +23,37 @@ class Exercice:
         enonce = data_parsed[0].content
         questions = [item.content for item in data_parsed if "QUESTION" in item.title]
         reponses = [item.content for item in data_parsed if "REPONSE" in item.title]
+        explications = [
+            item.content for item in data_parsed if "EXPLICATION" in item.title
+        ]
 
-        return cls(enonce=enonce, questions=questions, reponses=reponses)
+        return cls(
+            enonce=enonce,
+            questions=questions,
+            reponses=reponses,
+            explications=explications,
+        )
 
     def to_openai_prompt(self) -> OpenAiMessage:
         """Return a prompt to send to openai"""
 
         content = StringIO()
-        content.write("Voici un exemple d'exercice de mathématiques:\n")
-        content.write(f"{UNDERLINE}DEBUT DE L'EXERCICE\n{UNDERLINE}")
-        content.write(f"ENONCE\n{UNDERLINE}{self.enonce}\n")
-        for index, (question, reponse) in enumerate(zip(self.questions, self.reponses)):
-            content.write(f"QUESTION_{index+1}\n{UNDERLINE}{question}\n")
-            content.write(f"REPONSE_{index+1}\n{UNDERLINE}{reponse}\n")
-        content.write(f"{UNDERLINE}FIN DE L'EXERCICE\n{UNDERLINE}")
+        content.write(f"{UNDERLINE}ENONCE\n{UNDERLINE}")
+        content.write(f"{self.enonce}\n")
+        for index, question in enumerate(self.questions):
+            content.write(f"{UNDERLINE}QUESTION {index + 1}\n{UNDERLINE}")
+            content.write(f"{question}\n")
 
-        secure_prompt = SecurePrompt(role="system", content=content.getvalue())
+        for index, (rep, expli) in enumerate(zip(self.reponses, self.explications)):
+            content.write(f"{UNDERLINE}REPONSE {index + 1}\n{UNDERLINE}")
+            content.write(f"{rep}\n")
+            content.write(f"{UNDERLINE}EXPLICATION {index + 1}\n{UNDERLINE}")
+            content.write(f"{expli}\n")
+        content.write(f"{UNDERLINE}")
+
+        capsule = "Exemple d'exercice de mathématiques"
+
+        secure_prompt = EncapsulatePrompt(content.getvalue(), capsule)
 
         return secure_prompt.prompt
 
@@ -49,33 +66,18 @@ class ExerciceParser:
     lines: list[str] = None
 
     def __post_init__(self):
-        self.lines = read_file(self.file_path)
+        lines = read_file(self.file_path)
+        lines = "".join(lines)
+
+        self.lines = lines.split(UNDERLINE)[1:-1]
 
     def parse(self) -> Generator[FileItem, None, None]:
         """Parse the file and return a list of FileItem"""
-        is_title = False
-        reading = False
-        title = ""
-        content = ""
+
+        title = None
         for line in self.lines:
-            # Skip empty lines and set reading mode
-            if line.startswith("$-----$"):
-                reading = not reading
-
-                # If we are reading and we have a title, yield the content
-                if is_title and reading:
-                    yield FileItem(title=title, content=content)
-                    # Reset the content
-                    content = ""
-                    is_title = False
-
-                continue
-
-            # If we are reading, and title is set, add the line to the content
-            elif is_title:
-                content += line
-
-            # If we are not reading, set the title
+            if title is not None:
+                yield FileItem(title=title, content=line)
+                title = None
             else:
                 title = line
-                is_title = True

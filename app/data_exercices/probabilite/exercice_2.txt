@@ -17,6 +17,10 @@ Quelle doit être la valeur limite d'un fusible pour une puissance maximale de 5
 $-----$
 REPONSE 1
 $-----$
+6562.5
+$-----$
+EXPLICATIONS 1
+$-----$
 D'après l'énoncé, la valeur limite d'un fusible est proporionnelle à la puissance maximale
 d'où 3500 / 16 = P_max / 30
 P_max = 3500 * 30 / 16 
@@ -24,6 +28,10 @@ P_max = 6562.5
 Donc la puissance maximale pour un fusible de 30 A est de 6562.5 W
 $-----$
 REPONSE 2
+$-----$
+24
+$-----$
+EXPLICATIONS 2
 $-----$
 D'après l'énoncé, la valeur limite d'un fusible est proporionnelle à la puissance maximale
 d'où 3500 / 16 = 5250 / V_lim

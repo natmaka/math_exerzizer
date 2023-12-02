@@ -1,10 +1,10 @@
 """ Unit tests for the SecurePrompt class."""
-from app.core.app_types import SecurePrompt
+from app.core.app_types import EncapsulatePrompt
 
 
-def test_secure_prompt_add_lines():
+def test_encapsulate_prompt_add_lines():
     """Test the SecurePrompt class"""
-    prompt_to_test = SecurePrompt(role="system", content="test\n")
+    prompt_to_test = EncapsulatePrompt(content="test\n", capsule="PROMPT")
 
     lines = prompt_to_test.prompt["content"].split("\n")
 

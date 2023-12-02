@@ -1,0 +1,49 @@
+$-----$
+ENONCE
+$-----$
+Luc a placé un capital de 1 500 € à sa banque le
+1er janvier 2007 à un taux d'intérêts annuel de
+6 %. Cela signifie que chaque année la banque
+rajoute au capital 6 % de ce capital.
+$-----$
+QUESTION 1
+$-----$
+Quel sera le capital de Luc le 01/01/2008 ?
+$-----$
+QUESTION 2
+$-----$
+Quel sera le capital de Luc le 01/01/2009 ?
+$-----$
+QUESTION 3
+$-----$
+Quel pourcentage de son capital de départ
+Luc aura-t-il gagné en deux ans ?
+$-----$
+REPONSE 1
+$-----$
+1590
+$-----$
+EXPLICATIONS 1
+$-----$
+Chaque année le capital de Luc est multiplié par 1,06.
+Entre le 01/01/2007 et le 01/01/2008 il y a une année.
+Donc le capital de Luc le 01/01/2008 est égal à 1 500 x 1,06 = 1 590 €.
+$-----$
+REPONSE 2
+$-----$
+1685.4
+$-----$
+EXPLICATIONS 2
+$-----$
+Entre le 01/01/2007 et le 01/01/2009 il y a deux années.
+Le capital de Luc le 01/01/2009 est égal à 1 500 x 1,06 x 1,06 = 1 685,4 €.
+$-----$
+REPONSE 3
+$-----$
+12.36
+$-----$
+EXPLICATIONS 3
+$-----$
+Entre le 01/01/2007 et le 01/01/2009 son capital a augmenté de 1685,4 - 1500 = 185,4 €.
+Le pourcentage de son capital de départ qu'il a gagné est donc égal à 185,4 / 1500 x 100 = 12,36 %.
+$-----$

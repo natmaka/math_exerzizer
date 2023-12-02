@@ -1,0 +1,57 @@
+$-----$
+ENONCE
+$-----$
+François part de Valenciennes en direction de
+Reims par autoroute à 10 h en roulant à une
+vitesse constante de 102 km/h. Nathalie prend
+le même parcours 25 minutes plus tard en
+roulant à une vitesse constante de 126 km/h.
+$-----$
+QUESTION 1
+$-----$
+À quelle distance de Valenciennes se
+trouvent François à 11h ?
+$-----$
+QUESTION 2
+$-----$
+À quelle distance de Valenciennes se
+trouvent Nathalie à 11h ?
+$-----$
+QUESTION 3
+$-----$
+À quelle distance de Valenciennes Nathalie
+va-t-elle rattraper François ?
+$-----$
+REPONSE 1
+$-----$
+102
+$-----$
+EXPLICATIONS 1
+$-----$
+En 1 heure à 102 km/h, François parcourt 102 km.
+$-----$
+REPONSE 2
+$-----$
+73.5
+$-----$
+EXPLICATIONS 2
+$-----$
+Entre 10h25 et 11h, il s'ecoule 35 minutes, soit 35/60 = 7/12 heure.
+Donc en 7/12 heure à 126 km/h, Nathalie parcourt 7/12 x 126 = 73,5 km.
+$-----$
+REPONSE 3
+$-----$
+223.125
+$-----$
+EXPLICATIONS 3
+$-----$
+Ils vont se rattraper quand ils auront parcouru la même distance.
+102 x h = 126 x (h - 5/12)
+102h = 126h - 105/2
+102h - 126h = -105/2
+48h = 105
+h = 105/48
+h = 35/16
+Ce qui correspond à une distance de 102 x 35/16 = 223.125 km.
+ou 126 x (35/16 - 5/12) = 223.125 km.
+$-----$

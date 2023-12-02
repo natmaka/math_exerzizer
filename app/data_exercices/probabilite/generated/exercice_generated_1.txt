@@ -1,35 +1,30 @@
--------
-DEBUT DE L'EXERCICE 
--------
+<Exercice de mathématiques>
+$-----$
 ENONCE
--------
-Dans une école, on propose à tous les élèves qui participent à une compétition sportive une quantité d'eau propotionnelle au nombre d'heures d'effort prévues.
-Ainsi pour 1h d'effort, on donne 0.5 litres d'eau.  
-  
-QUESTION_1
--------
-Quelle quantité d'eau doit-on prévoir pour un élève qui va faire un effort de 2h30 ?
-
-REPONSE_1
--------
-D'après l'énoncé, la quantité d'eau est propotionnelle aux heures d'effort
-d'où 0.5 / 1 = Q / 2.5
-Q = 0.5 * 2.5
-Q = 1.25
-Donc pour un effort de 2h30, un élève aura besoin de 1,25 litres d'eau.  
-
-QUESTION_2
--------
-Si un élève a besoin de 2 litres d'eau, combien d'heure d'effort va-t-il faire ?
-
-REPONSE_2
--------
-D'après l'énoncé, la quantité d'eau est propotionnelle aux heures d'effort
-d'où 0.5 / 1 = 2 / H
-H = 2 * 1 / 0.5
-H = 4
-Donc si un élève a besoin de 2 litres d'eau, cela signifie qu'il va faire 4 heures d'effort.
-
--------
-FIN DE L'EXERCICE
--------
+$-----$
+La distance d'une voiture est proportionnelle au temps. Si la voiture roule pendant 5 heures à une vitesse constante, elle couvre 325 km.
+$-----$
+QUESTION 1
+$-----$
+Quelle distance la voiture couvrirait-elle en 8 heures à la même vitesse ?
+$-----$
+QUESTION 2
+$-----$
+Combien de temps prendrait la voiture pour parcourir 650 km à la même vitesse ?
+$-----$
+REPONSE 1
+$-----$
+520 km
+$-----$
+EXPLICATION 1
+$-----$
+La distance couverte est directement proportionnelle au temps, avec un ratio de 325/5=65 km/h. En 8h, la voiture parcourrait donc 8*65= 520km.
+$-----$
+REPONSE 2
+$-----$
+10 heures
+$-----$
+EXPLICATION 2
+$-----$
+La vélocité est de 65km/h, donc parcourir 650km à cette vitesse prendrait 650/65 = 10 heures. 
+$-----$

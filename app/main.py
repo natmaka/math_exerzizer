@@ -12,23 +12,29 @@ def main():
     """Main function of the app."""
     exemple_1_path = Path("app/data_exercices/probabilite/exercice_1.txt")
     exemple_2_path = Path("app/data_exercices/probabilite/exercice_2.txt")
+    exemple_3_path = Path("app/data_exercices/probabilite/exercice_3.txt")
+    exemple_4_path = Path("app/data_exercices/probabilite/exercice_4.txt")
 
     parsed_exemple_1 = ExerciceParser(file_path=exemple_1_path).parse()
     parsed_exemple_2 = ExerciceParser(file_path=exemple_2_path).parse()
+    parsed_exemple_3 = ExerciceParser(file_path=exemple_3_path).parse()
+    parsed_exemple_4 = ExerciceParser(file_path=exemple_4_path).parse()
 
     exemple_1 = Exercice.from_file(data_parsed=list(parsed_exemple_1))
     exemple_2 = Exercice.from_file(data_parsed=list(parsed_exemple_2))
+    exemple_3 = Exercice.from_file(data_parsed=list(parsed_exemple_3))
+    exemple_4 = Exercice.from_file(data_parsed=list(parsed_exemple_4))
 
-    prompt_builder = PromptBuider(
-        theme="proportionnalité", exemples=[exemple_1, exemple_2]
-    )
+    exemples = [exemple_1, exemple_2, exemple_3, exemple_4]
+
+    prompt_builder = PromptBuider(theme="proportionnalité", exemples=exemples)
 
     prompt = prompt_builder.build()
 
     open_ia_exercice = completion(prompt=prompt)
 
     save_file(
-        file_path=PROBABILITE_PATH / "exercice_generated_5.txt",
+        file_path=PROBABILITE_PATH / "exercice_generated_1.txt",
         content=open_ia_exercice,
     )
 

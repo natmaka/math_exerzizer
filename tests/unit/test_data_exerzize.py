@@ -14,8 +14,10 @@ def test_exercice_parseur(exercice_test):
         FileItem(title="ENONCE\n", content="test1\nazerty\nabc\n"),
         FileItem(title="QUESTION 1\n", content="test2\n"),
         FileItem(title="QUESTION 2\n", content="test3\n"),
-        FileItem(title="REPONSE 1\n", content="test4\n"),
-        FileItem(title="REPONSE 2\n", content="test5\ntest6\n"),
+        FileItem(title="REPONSE 1\n", content="1\n"),
+        FileItem(title="EXPLICATIONS 1\n", content="test4\n"),
+        FileItem(title="REPONSE 2\n", content="2\n"),
+        FileItem(title="EXPLICATIONS 2\n", content="test5\ntest6\n"),
     ]
 
     parseur = ExerciceParser(file_path=exercice_test)
@@ -35,15 +37,18 @@ def test_exercice_builder():
     expected_result = Exercice(
         enonce="test1\nazerty\nabc",
         questions=["test2", "test3"],
-        reponses=["test4", "test5\ntest6"],
+        reponses=["1", "2"],
+        explications=["test4", "test5\ntest6"],
     )
 
     parser_result = [
         FileItem(title="ENONCE", content="test1\nazerty\nabc"),
         FileItem(title="QUESTION 1", content="test2"),
         FileItem(title="QUESTION 2", content="test3"),
-        FileItem(title="REPONSE 1", content="test4"),
-        FileItem(title="REPONSE 2", content="test5\ntest6"),
+        FileItem(title="REPONSE 1", content="1"),
+        FileItem(title="REPONSE 2", content="2"),
+        FileItem(title="EXPLICATIONS 1", content="test4"),
+        FileItem(title="EXPLICATIONS 2", content="test5\ntest6"),
     ]
 
     exercice = Exercice.from_file(data_parsed=parser_result)
@@ -57,6 +62,10 @@ def test_exercice_builder():
     reponses_tuple = zip(exercice.reponses, expected_result.reponses)
 
     assert all(reponse == expected for reponse, expected in reponses_tuple)
+
+    explications_tuple = zip(exercice.explications, expected_result.explications)
+
+    assert all(explication == expected for explication, expected in explications_tuple)
 
 
 def test_exercice_to_openai_prompt():
@@ -73,30 +82,29 @@ def test_exercice_to_openai_prompt():
     expected_role = "system"
 
     expected_content = (
-        "Voici un exemple d'exercice de mathématiques:\n"
-        "-------\n"
+        "$-----$\n"
         "DEBUT DE L'EXERCICE\n"
-        "-------\n"
+        "$-----$\n"
         "ENONCE\n"
-        "-------\n"
+        "$-----$\n"
         "test1\n"
         "azerty\n"
         "abc\n"
         "QUESTION_1\n"
-        "-------\n"
+        "$-----$\n"
         "test2\n"
         "REPONSE_1\n"
-        "-------\n"
+        "$-----$\n"
         "test4\n"
         "QUESTION_2\n"
-        "-------\n"
+        "$-----$\n"
         "test3\n"
         "REPONSE_2\n"
-        "-------\n"
+        "$-----$\n"
         "test5\ntest6\n"
-        "-------\n"
+        "$-----$\n"
         "FIN DE L'EXERCICE\n"
-        "-------\n"
+        "$-----$\n"
     )
 
     exercice = Exercice.from_file(data_parsed=parser_result)

@@ -15,7 +15,15 @@ REPONSE 1
 $-----$
 
 $-----$
+EXPLICATIONS 1
+$-----$
+
+$-----$
 REPONSE 2
+$-----$
+
+$-----$
+EXPLICATIONS 2
 $-----$
 
 $-----$

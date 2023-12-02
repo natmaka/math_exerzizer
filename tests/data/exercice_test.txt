@@ -15,9 +15,17 @@ test3
 $-----$
 REPONSE 1
 $-----$
+1
+$-----$
+EXPLICATIONS 1
+$-----$
 test4
 $-----$
 REPONSE 2
+$-----$
+2
+$-----$
+EXPLICATIONS 2
 $-----$
 test5
 test6
