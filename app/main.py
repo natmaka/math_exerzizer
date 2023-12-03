@@ -31,6 +31,11 @@ def main():
 
     prompt = prompt_builder.build()
 
+    save_file(
+        file_path=PROBABILITE_PATH / "prompt.txt",
+        content="\n\n".join([content.get("content") for content in prompt]),
+    )
+
     open_ia_exercice = completion(prompt=prompt)
 
     save_file(

@@ -39,16 +39,16 @@ class Exercice:
 
         content = StringIO()
         content.write(f"{UNDERLINE}ENONCE\n{UNDERLINE}")
-        content.write(f"{self.enonce}\n")
+        content.write(f"{self.enonce}")
         for index, question in enumerate(self.questions):
             content.write(f"{UNDERLINE}QUESTION {index + 1}\n{UNDERLINE}")
-            content.write(f"{question}\n")
+            content.write(f"{question}")
 
         for index, (rep, expli) in enumerate(zip(self.reponses, self.explications)):
             content.write(f"{UNDERLINE}REPONSE {index + 1}\n{UNDERLINE}")
-            content.write(f"{rep}\n")
+            content.write(f"{rep}")
             content.write(f"{UNDERLINE}EXPLICATION {index + 1}\n{UNDERLINE}")
-            content.write(f"{expli}\n")
+            content.write(f"{expli}")
         content.write(f"{UNDERLINE}")
 
         capsule = "Exemple d'exercice de mathématiques"

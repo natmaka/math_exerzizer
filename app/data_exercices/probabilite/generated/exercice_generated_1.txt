@@ -1,30 +1,24 @@
-<Exercice de mathématiques>
 $-----$
 ENONCE
 $-----$
-La distance d'une voiture est proportionnelle au temps. Si la voiture roule pendant 5 heures à une vitesse constante, elle couvre 325 km.
+Dans un parc d'attractions, l'entrée pour un adulte coûte 20 € et celle pour un enfant coûte 12 €.
+Un groupe de 50 personnes, comprenant des adultes et des enfants, s'y rend. 
+Le coût total de leurs billets d'entrée est 780 €.
 $-----$
 QUESTION 1
 $-----$
-Quelle distance la voiture couvrirait-elle en 8 heures à la même vitesse ?
-$-----$
-QUESTION 2
-$-----$
-Combien de temps prendrait la voiture pour parcourir 650 km à la même vitesse ?
+Combien y a-t-il d'adultes et d'enfants dans le groupe?
 $-----$
 REPONSE 1
 $-----$
-520 km
+30, 20
 $-----$
 EXPLICATION 1
 $-----$
-La distance couverte est directement proportionnelle au temps, avec un ratio de 325/5=65 km/h. En 8h, la voiture parcourrait donc 8*65= 520km.
+Si tout le monde était un enfant, 
+le coût total serait de 50 x 12 = 600 €. 
+Par conséquent, la différence de 780 € - 600 € = 180 € est due à des adultes. 
+Comme chaque adulte coûte 8 € de plus qu'un enfant, il y a 180 € / 8 € = 22,5 adultes, qui est impossible. 
+Il doit y avoir une erreur dans le problème, ou il y a une remise pour certaines personnes.
 $-----$
-REPONSE 2
-$-----$
-10 heures
-$-----$
-EXPLICATION 2
-$-----$
-La vélocité est de 65km/h, donc parcourir 650km à cette vitesse prendrait 650/65 = 10 heures. 
-$-----$
+
