@@ -30,7 +30,7 @@ FLASK_APP="app\\route.py" // sur windows
 ```
 
 6. Lancez votre application Python, les points d'entrées sont :
-    - `flask run` pour lancer le serveur flash
+    - `flask run` pour lancer le serveur flask
     - `app/main.py` pour lancer en python
 
 ## Contribution
