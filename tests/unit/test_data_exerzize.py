@@ -72,38 +72,33 @@ def test_exercice_to_openai_prompt():
     """Test the exercice to openai prompt"""
 
     parser_result = [
-        FileItem(title="ENONCE", content="test1\nazerty\nabc"),
-        FileItem(title="QUESTION 1", content="test2"),
-        FileItem(title="QUESTION 2", content="test3"),
-        FileItem(title="REPONSE 1", content="test4"),
-        FileItem(title="REPONSE 2", content="test5\ntest6"),
+        FileItem(title="ENONCE", content="test1\nazerty\nabc\n"),
+        FileItem(title="QUESTION 1", content="test2\n"),
+        FileItem(title="REPONSE 1", content="test3\n"),
+        FileItem(title="EXPLICATION 1", content="test3\ntest4\n"),
     ]
 
     expected_role = "system"
 
     expected_content = (
         "$-----$\n"
-        "DEBUT DE L'EXERCICE\n"
-        "$-----$\n"
         "ENONCE\n"
         "$-----$\n"
         "test1\n"
         "azerty\n"
         "abc\n"
-        "QUESTION_1\n"
+        "$-----$\n"
+        "QUESTION 1\n"
         "$-----$\n"
         "test2\n"
-        "REPONSE_1\n"
         "$-----$\n"
-        "test4\n"
-        "QUESTION_2\n"
+        "REPONSE 1\n"
         "$-----$\n"
         "test3\n"
-        "REPONSE_2\n"
         "$-----$\n"
-        "test5\ntest6\n"
+        "EXPLICATION 1\n"
         "$-----$\n"
-        "FIN DE L'EXERCICE\n"
+        "test3\ntest4\n"
         "$-----$\n"
     )
 
