@@ -39,7 +39,7 @@ def main():
     open_ia_exercice = completion(prompt=prompt)
 
     save_file(
-        file_path=PROBABILITE_PATH / "exercice_generated_1.txt",
+        file_path=PROBABILITE_PATH / "exercice_generated_2.txt",
         content=open_ia_exercice,
     )
 
