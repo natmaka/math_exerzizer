@@ -29,7 +29,9 @@ OPENAI_API_KEY="votre clé API"
 FLASK_APP="app\\route.py" // sur windows
 ```
 
-6. Lancez votre application Python.
+6. Lancez votre application Python, les points d'entrées sont :
+    - `flask run` pour lancer le serveur flash
+    - `app/main.py` pour lancer en python
 
 ## Contribution
 
