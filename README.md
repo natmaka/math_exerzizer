@@ -23,7 +23,13 @@ python -m venv env
 ```bash
 pip install -r requirements.txt
 ```
-5. Lancez votre application Python.
+5. Créer un fichier `.env` à la racine du projet et ajouter les variables d'environnement suivantes :
+```bash 
+OPENAI_API_KEY="votre clé API"
+FLASK_APP="app\\route.py" // sur windows
+```
+
+6. Lancez votre application Python.
 
 ## Contribution
 
