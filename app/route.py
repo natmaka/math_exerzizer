@@ -1,56 +1,51 @@
-from flask import Flask, render_template, request
+from flask import Flask, jsonify, render_template, request
 import os
 from pathlib import Path
 
 from app.core.models.exercice import Exercice, ExerciceParser
+from app.flask_tools.check_answer import check_answer
+from app.flask_tools.exercices_provider import ExercicesProvider
 
 app = Flask(__name__)
-
-exercices = os.listdir("app/data_exercices/probabilite/generated")
-exercices = [
-    int(exercice.split(".")[0].split("_")[-1])
-    for exercice in exercices
-    if exercice.startswith("exercice_generated")
-]
-
-LAST_EXERCICE_PATH = (
-    Path(__file__).parent
-    / "data_exercices"
-    / "probabilite"
-    / "generated"
-    / f"exercice_generated_{max(exercices)}.txt"
-)
-
-PARSED_LAST_EXERCICE = ExerciceParser(file_path=LAST_EXERCICE_PATH).parse()
-LAST_EXERCICE = Exercice.from_file(data_parsed=list(PARSED_LAST_EXERCICE))
+ExercicesProvider.set_current_exercice()
 
 
-@app.route("/", methods=["GET"])
-def main_page():
-    return render_template(
-        "question.html",
-        enonce=LAST_EXERCICE.enonce,
-        question=LAST_EXERCICE.questions[0],
-    )
+@app.route("/question", methods=["GET"])
+def get_question():
+    exercice = ExercicesProvider.get_current_exercice()
+    data = {"enonce": exercice.enonce, "questions": exercice.questions}
+
+    return data, 200
 
 
-@app.route("/submit-answer", methods=["POST"])
+@app.route("/submit", methods=["POST"])
 def submit_answer():
+    exercice = ExercicesProvider.get_current_exercice()
     if request.method == "POST":
-        print(request.form)
-        answer = int(request.form["answer"])
+        # recuperation de la reponse
+        answers = request.get_json()["answers"]
 
-        print(LAST_EXERCICE.reponses[0])
+        is_valid = check_answer(answers=answers, correct_answer=exercice.reponses)
 
-        if answer == int(LAST_EXERCICE.reponses[0]):
-            message = "Bravo !"
+        if is_valid is not None:
+            return is_valid
 
-        else:
-            message = "Mauvaise réponse"
+        answers = [float(answer) for answer in answers]
 
-        return render_template(
-            "answer.html",
-            answer=answer,
-            message=message,
-            explication=LAST_EXERCICE.explications[0],
-        )
+        results = [ans == float(rep) for ans, rep in zip(answers, exercice.reponses)]
+
+        data = {
+            "answers": answers,
+            "results": results,
+            "explications": exercice.explications,
+        }
+
+        return data, 200
+
+
+@app.route("/create_new_exercice", methods=["GET"])
+def create_new_exercice():
+    """Create a new exercice"""
+    ExercicesProvider.create_new_exercice()
+    ExercicesProvider.set_current_exercice()
+    return "ok", 201

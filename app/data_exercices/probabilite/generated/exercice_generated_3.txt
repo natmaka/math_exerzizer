@@ -1,0 +1,41 @@
+$-----$
+ENONCE
+$-----$
+Un salarié est en congé sans solde pour une durée d'une année pour s'occuper de sa fille. La garde d'enfant à domicile coûte 15 €/h tandis qu'une crèche coûte un forfait mensuel de 850 €.
+$-----$
+QUESTION 1
+$-----$
+Combien coûtera la garde à domicile si la fille est gardée 6h par jour pendant une semaine ?
+$-----$
+QUESTION 2
+$-----$
+Combien coûtera la garde à domicile si la fille est gardée 6h par jour pendant un mois (30 jours) ?
+$-----$
+QUESTION 3
+$-----$
+Quelle est la solution la plus économique entre la garde à domicile et la crèche pour un mois ?
+$-----$
+REPONSE 1
+$-----$
+630
+$-----$
+EXPLICATION 1
+$-----$
+Dans une semaine, il y a 7 jours. Ainsi, pour 6 heures par jour, cela fait 7*6 = 42 heures. Le coût de la garde à domicile est donc 42*15 = 630 €.
+$-----$
+REPONSE 2
+$-----$
+2700
+$-----$
+EXPLICATION 2
+$-----$
+Dans un mois, il y a 30 jours. Ainsi, pour 6 heures par jour, cela fait 30*6 = 180 heures. Le coût de la garde à domicile est donc 180*15 = 2700 €.
+$-----$
+REPONSE 3
+$-----$
+850
+$-----$
+EXPLICATION 3
+$-----$
+Le coût de la crèche est le plus économique pour un mois car il coûte 850 €, soit moins que le coût de la garde à domicile (2700 €).
+$-----$

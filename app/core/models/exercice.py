@@ -1,5 +1,4 @@
 """Exercice model"""
-import re
 from dataclasses import dataclass
 from io import StringIO
 from typing import Generator
