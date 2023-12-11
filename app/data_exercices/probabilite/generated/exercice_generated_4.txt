@@ -1,0 +1,46 @@
+$-----$
+ENONCE
+$-----$
+Pour son repas d'anniversaire, Emma a décidé de faire une énorme salade de fruits. Elle a créé sa recette, qui pour 4 personnes nécessite :
+- 1 kg de pommes,
+- 0,5 kg de raisins,
+- 1,5 kg d'ananas.
+
+Emma invite 16 personnes à son anniversaire.
+$-----$
+QUESTION 1
+$-----$
+Combien de kg de pommes Emma doit-elle prévoir pour son repas ?
+$-----$
+QUESTION 2
+$-----$
+Quelle quantité de raisins Emma doit-elle acheter ?
+$-----$
+QUESTION 3
+$-----$
+Combien de kg d'ananas doit-elle prévoir ?
+$-----$
+REPONSE 1
+$-----$
+4
+$-----$
+EXPLICATION 1
+$-----$
+Il faut 1 kg de pommes pour 4 personnes donc pour 16 personnes, elle doit multiplier la quantité par 4, donc 4 kg de pommes.
+$-----$
+REPONSE 2
+$-----$
+2
+$-----$
+EXPLICATION 2
+$-----$
+Elle a besoin de 0,5 kg de raisins pour 4 personnes donc pour 16 personnes, elle doit multiplier la quantité par 4, donc 2 kg de raisins.
+$-----$
+REPONSE 3
+$-----$
+6
+$-----$
+EXPLICATION 3
+$-----$
+Elle a besoin de 1,5 kg d'ananas pour 4 personnes donc pour 16 personnes, elle doit multiplier la quantité par 4, donc 6 kg d'ananas.
+$-----$
