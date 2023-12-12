@@ -1,0 +1,29 @@
+$-----$
+ENONCE
+$-----$
+Un groupe de randonneurs veulent faire une randonnée à vélo sur 84 km. Ils roulent à une vitesse moyenne de 12 km/h sans arrêter.
+$-----$
+QUESTION 1
+$-----$
+Combien de temps leur faudra-t-il pour terminer leur parcours ?
+$-----$
+QUESTION 2
+$-----$
+Si le groupe décide de s'arrêter 10 minutes toutes les heures pour se reposer. Combien de temps en minutes dureront tous les arrêts si ils maintiennent leur vitesse moyenne ?
+$-----$
+REPONSE 1
+$-----$
+7
+$-----$
+EXPLICATION 1
+$-----$
+Ils roulent à une vitesse constante de 12 km/h, donc pour parcourir 84 km, ils mettront 84 / 12 = 7 heures.
+$-----$
+REPONSE 2
+$-----$
+70
+$-----$
+EXPLICATION 2
+$-----$
+Comme ils mettent 7 heures pour le parcours, et qu'ils s'arrêtent 10 minutes chaque heure, le temps total des pauses sera de 7 * 10 = 70 minutes.
+$-----$

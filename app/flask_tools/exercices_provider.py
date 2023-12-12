@@ -86,5 +86,5 @@ class ExercicesProvider:
         save_file(
             file_path=PROBABILITE_PATH
             / f"exercice_generated_{cls._currend_exercice_id}.txt",
-            content=open_ia_exercice,
+            content=f"{open_ia_exercice}\n",
         )
