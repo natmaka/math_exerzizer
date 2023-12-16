@@ -6,6 +6,7 @@ from app.core.constants import PROBABILITE_PATH
 from app.core.models.exercice import Exercice, ExerciceParser
 from app.core.models.prompt import PromptBuider
 from app.core.models.completion import completion
+from app.core.models.thinking import Thinking
 
 
 class ExercicesProvider:
@@ -87,4 +88,18 @@ class ExercicesProvider:
             file_path=PROBABILITE_PATH
             / f"exercice_generated_{cls._currend_exercice_id}.txt",
             content=f"{open_ia_exercice}\n",
+        )
+
+        # thinking
+        thinking = Thinking(prompt, open_ia_exercice)
+        beter_exercice = thinking.get_thinking_fruit()
+
+        # incrementing exercice id
+        cls._currend_exercice_id += 1
+
+        # saving exercice
+        save_file(
+            file_path=PROBABILITE_PATH
+            / f"exercice_generated_{cls._currend_exercice_id}.txt",
+            content=f"{beter_exercice}\n",
         )

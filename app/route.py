@@ -1,3 +1,4 @@
+""" This module contains the routes of the application """
 from flask import Flask, request
 from flask_cors import CORS
 
@@ -5,12 +6,13 @@ from app.flask_tools.check_answer import check_answer
 from app.flask_tools.exercices_provider import ExercicesProvider
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/*": {"origins": "http://localhost*"}})
 ExercicesProvider.set_current_exercice()
 
 
 @app.route("/question", methods=["GET"])
 def get_question():
+    """Return the current question"""
     exercice = ExercicesProvider.get_current_exercice()
     data = {"enonce": exercice.enonce, "questions": exercice.questions}
 
@@ -19,6 +21,7 @@ def get_question():
 
 @app.route("/submit", methods=["POST"])
 def submit_answer():
+    """Submit an answer"""
     exercice = ExercicesProvider.get_current_exercice()
     if request.method == "POST":
         # recuperation de la reponse
