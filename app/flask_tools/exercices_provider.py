@@ -1,4 +1,5 @@
 """Module to provide exercices"""
+import logging
 import os
 from pathlib import Path
 from app.adapters.file_read import save_file
@@ -7,6 +8,8 @@ from app.core.models.exercice import Exercice, ExerciceParser
 from app.core.models.prompt import PromptBuider
 from app.core.models.completion import completion
 from app.core.models.thinking import Thinking
+
+logger = logging.getLogger(__name__)
 
 
 class ExercicesProvider:
@@ -90,6 +93,8 @@ class ExercicesProvider:
             content=f"{open_ia_exercice}\n",
         )
 
+        logger.info("First version of exercice generated")
+
         # thinking
         thinking = Thinking(prompt, open_ia_exercice)
         beter_exercice = thinking.get_thinking_fruit()
@@ -103,3 +108,5 @@ class ExercicesProvider:
             / f"exercice_generated_{cls._currend_exercice_id}.txt",
             content=f"{beter_exercice}\n",
         )
+
+        logger.info("Second version of exercice generated")

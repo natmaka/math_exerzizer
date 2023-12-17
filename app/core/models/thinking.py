@@ -3,6 +3,9 @@ from io import StringIO
 from app.core.app_types import OpenAiMessage
 from app.core.constants import SEPARATOR
 from app.core.models.completion import completion
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class Thinking:
@@ -17,7 +20,7 @@ class Thinking:
 
         thinking_prompt = self._thinking_prompt()
         reflexion = self._get_reflexion(thinking_prompt)
-        print(reflexion.get("content"))
+        logger.info(reflexion.get("content"))
         reformat_response = self._get_reformat(reflexion)
 
         return reformat_response
