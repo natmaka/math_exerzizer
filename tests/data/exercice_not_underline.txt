@@ -1,0 +1,28 @@
+$-----$
+ENONCE
+$-----$
+Une entreprise de location de scooters facture ses clients selon le nombre de jours de location de scooter. Le tarif est de 30€ par jour.
+$-----$
+QUESTION 1
+$-----$
+Combien coûterait la location d'un scooter pendant 6 jours ?
+$-----$
+QUESTION 2
+$-----$
+Un client a une facture de 120€, combien de jours a-t-il loué le scooter ?
+$-----$
+REPONSE 1
+$-----$
+180
+$-----$
+EXPLICATION 1
+$-----$
+Si 1 jour coûte 30€, alors 6 jours coûteraient 30 * 6 = 180€.
+$-----$
+REPONSE 2
+$-----$
+4
+$-----$
+EXPLICATION 2
+$-----$
+Si 1 jour coûte 30€, alors une facture de 120€ représente 120 / 30 = 4 jours de location.

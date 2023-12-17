@@ -32,3 +32,4 @@ EXPLICATIONS 2
 $-----$
 En un an, il y a 365,25 x 24 = 8766 h
 Donc la fuite coûtera 8766 x 5 = 43830 € 
+$-----$
