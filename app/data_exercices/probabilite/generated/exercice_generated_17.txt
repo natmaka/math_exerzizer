@@ -1,0 +1,41 @@
+$-----$
+ENONCE
+$-----$
+Dans un supermarché, le kilogramme de pêches est vendu à un prix fixe de 3.40 €. Peu importe la quantité que vous achetez, le prix du kilogramme reste le même.
+$-----$
+QUESTION 1
+$-----$
+Si vous voulez acheter 0.75 kilogramme de pêches, combien cela vous coûterait-il ?
+$-----$
+QUESTION 2
+$-----$
+Combien coûterait l'achat de 3 kilogrammes de pêches ?
+$-----$
+QUESTION 3
+$-----$
+Léa a acheté 2.5 kilogrammes de pêches. Combien a-t-elle dépensé ?
+$-----$
+REPONSE 1
+$-----$
+2.55
+$-----$
+EXPLICATION 1
+$-----$
+Le prix est proportionnel à la masse de pêches. Donc pour 0.75 kilogramme, le coût serait de 3.40 * 0.75 = 2.55 €.
+$-----$
+REPONSE 2
+$-----$
+10.2
+$-----$
+EXPLICATION 2
+$-----$
+Pour 3 kilogrammes de pêches, le coût est de 3.40 * 3 = 10.2 €.
+$-----$
+REPONSE 3
+$-----$
+8.5
+$-----$
+EXPLICATION 3
+$-----$
+Léa a dépensé 3.40 * 2.5 = 8.5 € pour 2.5 kilogrammes de pêches.
+$-----$

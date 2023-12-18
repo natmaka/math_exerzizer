@@ -8,6 +8,7 @@ from app.core.models.exercice import Exercice, ExerciceParser
 from app.core.models.prompt import PromptBuider
 from app.core.models.completion import completion
 from app.core.models.thinking import Thinking
+from app.core.models.verif import verif_exercice
 
 logger = logging.getLogger(__name__)
 
@@ -86,27 +87,44 @@ class ExercicesProvider:
         # incrementing exercice id
         cls._currend_exercice_id += 1
 
+        # verif exercice
+        corrected_exercice = verif_exercice(open_ia_exercice)
+
         # saving exercice
         save_file(
             file_path=PROBABILITE_PATH
+            / "first_versions"
             / f"exercice_generated_{cls._currend_exercice_id}.txt",
-            content=f"{open_ia_exercice}\n",
+            content=f"{corrected_exercice}",
         )
 
         logger.info("First version of exercice generated")
 
         # thinking
         thinking = Thinking(prompt, open_ia_exercice)
-        beter_exercice = thinking.get_thinking_fruit()
+        thinking_prompt = thinking.thinking_prompt()
+        reflexion = thinking.get_reflexion(thinking_prompt)
 
-        # incrementing exercice id
-        cls._currend_exercice_id += 1
+        logger.info("Reflexion generated")
+
+        # saving reflexion
+        save_file(
+            file_path=PROBABILITE_PATH
+            / "motifs"
+            / f"motif_{cls._currend_exercice_id}.txt",
+            content=reflexion.get("content"),
+        )
+
+        beter_exercice = thinking.get_reformat(reflexion)
+
+        # verif exercice
+        beter_exercice_verified = verif_exercice(beter_exercice)
 
         # saving exercice
         save_file(
             file_path=PROBABILITE_PATH
             / f"exercice_generated_{cls._currend_exercice_id}.txt",
-            content=f"{beter_exercice}\n",
+            content=beter_exercice_verified,
         )
 
         logger.info("Second version of exercice generated")

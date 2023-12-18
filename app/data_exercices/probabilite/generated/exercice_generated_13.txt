@@ -1,0 +1,29 @@
+$-----$
+ENONCE
+$-----$
+Dans la bibliothèque d'Emma, chaque étagère peut contenir 25 livres. Quand elle a commencé à les ranger, elle a placé 125 livres sur 5 étagères.
+$-----$
+QUESTION 1
+$-----$
+Si Emma a encore 75 livres à ranger, combien d'étagères lui faut-il encore ?
+$-----$
+QUESTION 2
+$-----$
+Si Emma installe encore 8 étagères, combien de livres pourra-t-elle ranger en tout ?
+$-----$
+REPONSE 1
+$-----$
+3
+$-----$
+EXPLICATION 1
+$-----$
+Le nombre d'étagères nécessaires est directement proportionnel au nombre de livres. Donc, pour 75 livres, Emma aura besoin de 75/25 = 3 étagères supplémentaires.
+$-----$
+REPONSE 2
+$-----$
+325
+$-----$
+EXPLICATION 2
+$-----$
+Le nombre total d'étagères sera 5 (déjà remplies) + 8 (ajoutées) = 13. Donc, le nombre total de livres que peut contenir la bibliothèque est 13 * 25 = 325 livres.
+$-----$

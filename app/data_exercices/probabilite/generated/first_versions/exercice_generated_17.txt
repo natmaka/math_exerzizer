@@ -1,0 +1,42 @@
+$-----$
+ENONCE
+$-----$
+Au supermarché, 1 kg de pêches coûte 3.40 €. Le prix du kg est le même, que l’on achète 1 kg ou que l’on en achète plusieurs.
+$-----$
+QUESTION 1
+$-----$
+Quel est le prix de 750 g de pêches ?
+$-----$
+QUESTION 2
+$-----$
+Combien coûte 3 kg de pêches ?
+$-----$
+QUESTION 3
+$-----$
+Léa a acheté 2.5 kg de pêches. Combien a-t-elle payé ?
+$-----$
+REPONSE 1
+$-----$
+2.55
+$-----$
+EXPLICATION 1
+$-----$
+D'après l'énoncé, le prix est proportionnel à la masse de pêches.
+Donc pour 750 g (qui est égal à 0.75 kg), cela coûterait 3.40 * 0.75 = 2.55 €
+$-----$
+REPONSE 2
+$-----$
+10.2
+$-----$
+EXPLICATION 2
+$-----$
+Pour 3 kg de pêches, cela coûterait 3.40 * 3 = 10.2 €
+$-----$
+REPONSE 3
+$-----$
+8.5
+$-----$
+EXPLICATION 3
+$-----$
+Léa a payé 3.40 * 2.5 = 8.5 € pour 2.5 kg de pêches.
+$-----$

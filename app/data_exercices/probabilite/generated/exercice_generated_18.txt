@@ -1,0 +1,29 @@
+$-----$
+ENONCE
+$-----$
+Un restaurant propose une formule spéciale pour les groupes : pour 6 pizzas commandées, le restaurant offre 2 pizzas gratuites. Ainsi, chaque lot de 8 pizzas est composé de 6 pizzas achetées et 2 pizzas gratuites.
+$-----$
+QUESTION 1
+$-----$
+Combien de pizzas gratuites obtiendra-t-on si on commande 18 pizzas ?
+$-----$
+QUESTION 2
+$-----$
+Combien de pizzas devra-t-on payer si on reçoit 40 pizzas en tout ?
+$-----$
+REPONSE 1
+$-----$
+6
+$-----$
+EXPLICATION 1
+$-----$
+Pour chaque groupe de 6 pizzas achetées, le restaurant en offre 2 gratuities. Donc, pour 18 pizzas achetées, le restaurant en offre 2 x 3 = 6 gratuites.
+$-----$
+REPONSE 2
+$-----$
+30
+$-----$
+EXPLICATION 2
+$-----$
+Pour chaque groupe de 8 pizzas reçues (6 payées, 2 gratuites), le restaurant fait payer 6 pizzas. Donc, pour 40 pizzas reçues, le restaurant fait payer 6 x 5 = 30 pizzas.
+$-----$

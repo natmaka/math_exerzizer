@@ -1,0 +1,21 @@
+Je comprends bien l'énoncé et les questions.
+
+Les réponses semblent tout à fait correspondre aux questions. 
+En effet, si nous commandons 18 pizzas, nous aurons bien 6 pizzas gratuites 
+car 18 est divisé par 6, il s'agit d'acheter trois fois la formule "6 pizzas", 
+soit 6 pizzas gratuites. 
+
+Pour la deuxième question, 
+si nous recevons 40 pizzas en tout (pizzas payées + pizzas gratuites), 
+nous devrons payer 30 pizzas, car 40 est divisé par 8 (la formule totale de pizzas reçues), 
+cela signifie que nous avons commandé la formule "8 pizzas" 
+(6 payées et 2 gratuites) 5 fois. Donc, en fin de compte, nous avons payé 6 x 5 = 30 pizzas.
+
+L'explication pour les deux questions est claire et logique.
+ Je ne vois pas comment une confusion peut survenir concernant les unités ou les quantités, 
+ puisqu'il est très clair que nous parlons de nombres de pizzas tout au long de l'exercice. 
+
+Cependant, pour faciliter la compréhension, 
+ils auraient pu préciser que chaque lot de "8 pizzas" 
+se compose de 6 pizzas achetées et 2 pizzas gratuites. 
+Ainsi, l'interprétation des réponses serait encore plus simple.

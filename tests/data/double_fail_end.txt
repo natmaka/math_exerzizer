@@ -1,0 +1,33 @@
+$-----$
+ENONCE
+$-----$
+Marie achète 3 kg d'oranges pour 5,40 €. Le prix est ici proportionnel au poids des fruits achetés.
+Le prix d’un kilogramme est donc de 1,80 €.
+
+$-----$
+QUESTION 1
+$-----$
+Quel serait le prix pour 5 kg d'oranges ?
+$-----$
+QUESTION 2
+$-----$
+Combien de kilogrammes d'oranges peut-on acheter pour 9 € ?
+$-----$
+REPONSE 1
+$-----$
+9
+$-----$
+EXPLICATION 1
+$-----$
+Le prix est proportionnel au poids, donc pour 5 kg d'oranges, il suffit de multiplier le prix d'1 kg par 5. Soit : 1,80 € * 5 = 9 €.
+$-----$
+REPONSE 2
+$-----$
+5
+$-----$
+EXPLICATION 2
+$-----$
+Pour savoir combien de kilogrammes d'oranges on peut acheter pour 9 €, on divise le montant donné par le prix d'1 kg. Soit : 9 € / 1,80 €/kg = 5 kg.
+$-----$
+$-----$
+

@@ -1,9 +1,9 @@
 """Thinking model"""
 from io import StringIO
+import logging
 from app.core.app_types import OpenAiMessage
 from app.core.constants import SEPARATOR
 from app.core.models.completion import completion
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -15,32 +15,27 @@ class Thinking:
         self.initial_prompt = initial_prompt
         self.generated_exercice = generated_exercice
 
-    def get_thinking_fruit(self) -> str:
-        """Return a thinking fruit"""
-
-        thinking_prompt = self._thinking_prompt()
-        reflexion = self._get_reflexion(thinking_prompt)
-        logger.info(reflexion.get("content"))
-        reformat_response = self._get_reformat(reflexion)
-
-        return reformat_response
-
-    def _thinking_prompt(self) -> OpenAiMessage:
+    def thinking_prompt(self) -> OpenAiMessage:
         """Return a thinking prompt"""
 
         thinking_prompt = StringIO()
         thinking_prompt.write(f"TON ROLE\n{SEPARATOR}")
         thinking_prompt.write("Regarde cet exercice en tant qu'un élève de 4ème\n")
+        thinking_prompt.write("Tu as un regard critique\n")
         thinking_prompt.write(f"EXERCICE\n{SEPARATOR}")
         thinking_prompt.write(f"{self.generated_exercice}\n")
         thinking_prompt.write(f"REFLECHI\n{SEPARATOR}")
         thinking_prompt.write("Est-ce que tu comprends l'énoncé et les questions ?\n")
         thinking_prompt.write("Est-ce que les reponses te semblent correspondre ?\n")
         thinking_prompt.write("Est-ce que les explications sont claire\n")
+        thinking_prompt.write("Est-ce qu'une confusion est possible sur les unités ?\n")
+        thinking_prompt.write(
+            "Est-ce qu'une confusion est possible sur les quantités ?\n"
+        )
 
         return OpenAiMessage(role="system", content=thinking_prompt.getvalue())
 
-    def _get_reflexion(self, thinking_prompt: OpenAiMessage) -> OpenAiMessage:
+    def get_reflexion(self, thinking_prompt: OpenAiMessage) -> OpenAiMessage:
         """Return a reflexion prompt"""
 
         response = completion([thinking_prompt])
@@ -50,7 +45,7 @@ class Thinking:
 
         return OpenAiMessage(role="assistant", content=response)
 
-    def _get_reformat(self, reflexion: OpenAiMessage) -> str:
+    def get_reformat(self, reflexion: OpenAiMessage) -> str:
         """Return a reformat prompt"""
 
         prompt = [*self.initial_prompt]

@@ -26,3 +26,4 @@ $-----$
 EXPLICATION 2
 $-----$
 Si 1 jour coûte 30€, alors une facture de 120€ représente 120 / 30 = 4 jours de location.
+$-----$

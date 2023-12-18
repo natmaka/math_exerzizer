@@ -1,0 +1,29 @@
+$-----$
+ENONCE
+$-----$
+Marc est un athlète talentueux qui peut courir le 100 mètres en seulement 12 secondes. 
+$-----$
+QUESTION 1
+$-----$
+Si Marc maintient cette vitesse, quelle distance réussira-t-il à courir en une minute ?
+$-----$
+QUESTION 2
+$-----$
+Avec cette vitesse constante, combien de temps aurait besoin Marc pour accomplir un kilomètre de course ?
+$-----$
+REPONSE 1
+$-----$
+500
+$-----$
+EXPLICATION 1
+$-----$
+Une minute équivaut à 60 secondes. Si Marc court 100 mètres en 12 secondes, alors, en 60 secondes, il va parcourir une distance de 60 ÷ 12 x 100 = 500 mètres.
+$-----$
+REPONSE 2
+$-----$
+120
+$-----$
+EXPLICATION 2
+$-----$
+Un kilomètre est équivalent à 1000 mètres. Par conséquent, avec le rythme de Marc qui est de 100 mètres en 12 secondes, pour courir 1 000 mètres, il lui faudrait 1000 ÷ 100 × 12 = 120 secondes.
+$-----$
