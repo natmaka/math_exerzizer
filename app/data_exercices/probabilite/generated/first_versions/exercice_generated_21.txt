@@ -1,0 +1,31 @@
+$-----$
+ENONCE
+$-----$
+Katia, une professeure de sport, fait courir ses élèves pendant 30 minutes. Elle observe qu'ils courent en moyenne 5 km en 30 minutes. 
+$-----$
+QUESTION 1
+$-----$
+Combien de km courront-ils en 1 heure à cette vitesse ?
+$-----$
+QUESTION 2
+$-----$
+Combien de temps faudra-t-il pour courir 21 km à cette vitesse ?
+$-----$
+REPONSE 1
+$-----$
+10
+$-----$
+EXPLICATION 1
+$-----$
+La dépense est porpotionnelle au temps de course.
+Ainsi en 1 heure, ils courent deux fois plus, donc 5*2 = 10 km.
+$-----$
+REPONSE 2
+$-----$
+126
+$-----$
+EXPLICATION 2
+$-----$
+La distance parcourue est aussi porpotionnelle au temps de course.
+Ainsi pour courir 21 km à cette vitesse, cela prend 21 / 5 * 30 = 126 minutes.
+$-----$

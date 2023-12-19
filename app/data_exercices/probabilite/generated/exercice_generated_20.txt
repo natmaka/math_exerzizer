@@ -1,0 +1,54 @@
+$-----$
+ENONCE
+$-----$
+Un peintre est engagé pour peindre un immeuble. Il peut peindre 2,5 mètres carrés en 1 heure. Il travaille 8 heures par jour, avec 1 heure de pause déjeuner. L'immeuble a une surface totale de 120 mètres carrés à peindre, mais 15 mètres carrés correspondent à des fenêtres qui ne doivent pas être peintes.
+$-----$
+QUESTION 1
+$-----$
+Quel est son temps de travail effectif par jour (sans compter la pause déjeuner) ?
+$-----$
+QUESTION 2
+$-----$
+Combien de mètres carrés peint-il en une journée de travail effectif ?
+$-----$
+QUESTION 3
+$-----$
+Suite à l'exclusion des fenêtres, quelle est la surface réelle qu'il doit peindre ?
+$-----$
+QUESTION 4
+$-----$
+Combien de jours cela lui prendra-t-il pour peindre l'intégralité de l'immeuble (à l'exclusion des fenêtres) ?
+$-----$
+REPONSE 1
+$-----$
+7
+$-----$
+EXPLICATION 1
+$-----$
+Il travaille 8 heures par jour, mais a une pause déjeuner d'une heure. Donc son temps de travail effectif est de 8 - 1 = 7 heures.
+$-----$
+REPONSE 2
+$-----$
+17.5
+$-----$
+EXPLICATION 2
+$-----$
+La surface qu'il peint est proportionnelle au temps travaillé. Le coefficient de proportionnalité est 2,5 m²/heure.
+En une journée de travail effectif de 7 heures, il peint 2,5 * 7 = 17,5 m².
+$-----$
+REPONSE 3
+$-----$
+105
+$-----$
+EXPLICATION 3
+$-----$
+La surface totale à peindre est de 120 m², mais il y a 15 m² de fenêtres qui ne doivent pas être peintes. Donc la surface réelle qu'il doit peindre est de 120 - 15 = 105 m².
+$-----$
+REPONSE 4
+$-----$
+6
+$-----$
+EXPLICATION 4
+$-----$
+Il peint 17,5 m² par jour de travail effectif et la surface réelle à peindre est de 105 m². Donc, il lui faudra 105 / 17,5 = 6 jours pour peindre l'intégralité de l'immeuble (à l'exclusion des fenêtres).
+$-----$

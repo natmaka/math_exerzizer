@@ -1,0 +1,41 @@
+$-----$
+ENONCE
+$-----$
+Au supermarché, Lisa achète 5 kilogrammes (kg) de pommes pour un coût total de 7,50 €.
+$-----$
+QUESTION 1
+$-----$
+Quel est le prix en euros d'1 kilogramme (kg) de pommes ?
+$-----$
+QUESTION 2
+$-----$
+Combien Lisa devrait-elle payer en euros pour 3 kilogrammes (kg) de pommes ?
+$-----$
+QUESTION 3
+$-----$
+Si Lisa ne disposait que de 15 € et souhaitait utiliser tout cet argent pour acheter uniquement des pommes, quelle serait la quantité maximale de pommes qu'elle pourrait se procurer en kilogrammes (kg) ?
+$-----$
+REPONSE 1
+$-----$
+1.5
+$-----$
+EXPLICATION 1
+$-----$
+Pour déterminer combien coûte 1 kg de pommes, il faut diviser le coût total des pommes (7,50 €) par leur masse totale (5 kg). Ainsi, le prix d'1 kg de pommes est égal à 7,50 € / 5 kg = 1,5 €/kg.
+$-----$
+REPONSE 2
+$-----$
+4.5
+$-----$
+EXPLICATION 2
+$-----$
+Lorsque nous connaissons le prix de 1 kg de pommes, nous pouvons facilement calculer combien nous devons payer pour une autre masse de pommes. Dans ce cas, nous souhaitons calculer le coût de 3 kg de pommes. En multipliant le prix de 1 kg de pommes (1,5 €/kg) par la masse des pommes désirée (3 kg), nous obtenons le coût total de 3 kg de pommes : 1,5 €/kg * 3 kg = 4,5 €.
+$-----$
+REPONSE 3
+$-----$
+10
+$-----$
+EXPLICATION 3
+$-----$
+Pour calculer la masse maximale de pommes que Lisa pourrait acheter avec 15 €, nous devons diviser le montant total qu'elle est prête à dépenser (15 €) par le prix de 1 kg de pommes (1,5 €/kg). Autrement dit, si elle dépensait tout son argent pour acheter des pommes à 1,5 €/kg, elle pourrait se procurer 15 € / 1,5 €/kg = 10 kg de pommes.
+$-----$

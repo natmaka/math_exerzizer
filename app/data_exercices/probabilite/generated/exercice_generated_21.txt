@@ -1,0 +1,32 @@
+$-----$
+ENONCE
+$-----$
+Katia, une professeure de sport, fait courir ses élèves à une vitesse constante pendant 30 minutes. Elle observe qu'en courant à cette vitesse constante, ils parcourent en moyenne 5 km en 30 minutes. 
+$-----$
+QUESTION 1
+$-----$
+Combien de km courront-ils en 1 heure à cette vitesse constante ?
+$-----$
+QUESTION 2
+$-----$
+Combien de temps (en minutes) leur faudra-t-il pour courir 21 km à cette vitesse constante ?
+$-----$
+REPONSE 1
+$-----$
+10
+$-----$
+EXPLICATION 1
+$-----$
+La distance parcourue est proportionnelle au temps de course.
+À cette vitesse constante, en doublant le temps de course (de 30 minutes à 60 minutes, ou équivalent à 1 heure), la distance parcourue est également doublée. Donc, ils parcourent 5*2 = 10 km en 1 heure.
+$-----$
+REPONSE 2
+$-----$
+126
+$-----$
+EXPLICATION 2
+$-----$
+Le temps nécessaire pour parcourir une certaine distance est également proportionnel à la distance.
+Ainsi, pour courir 21 km à cette vitesse constante, cela prendrait (21 km / 5 km) * 30 minutes = 126 minutes pour parcourir 21 km.
+
+$-----$

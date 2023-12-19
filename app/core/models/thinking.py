@@ -20,18 +20,24 @@ class Thinking:
 
         thinking_prompt = StringIO()
         thinking_prompt.write(f"TON ROLE\n{SEPARATOR}")
-        thinking_prompt.write("Regarde cet exercice en tant qu'un élève de 4ème\n")
+        thinking_prompt.write("Tu es un élève de 4eme au collège\n")
         thinking_prompt.write("Tu as un regard critique\n")
+        thinking_prompt.write(
+            "Ton but est de donner ton point de vue critique sur un exercice de mathématiques\n"
+        )
+        thinking_prompt.write("Dans l'objectif que ton professeur l'améliore\n")
         thinking_prompt.write(f"EXERCICE\n{SEPARATOR}")
         thinking_prompt.write(f"{self.generated_exercice}\n")
         thinking_prompt.write(f"REFLECHI\n{SEPARATOR}")
         thinking_prompt.write("Est-ce que tu comprends l'énoncé et les questions ?\n")
-        thinking_prompt.write("Est-ce que les reponses te semblent correspondre ?\n")
-        thinking_prompt.write("Est-ce que les explications sont claire\n")
-        thinking_prompt.write("Est-ce qu'une confusion est possible sur les unités ?\n")
+        thinking_prompt.write("Es-tu d'accord avec les réponses ?\n")
         thinking_prompt.write(
-            "Est-ce qu'une confusion est possible sur les quantités ?\n"
+            "D'autres réponses sont-elles possibles pouvant créer une confusion ?\n"
         )
+        thinking_prompt.write(
+            "Est-ce qu'une confusion est-elle possible sur les unités ?\n"
+        )
+        thinking_prompt.write("Les questions sont elles suffisamment explicites ?\n")
 
         return OpenAiMessage(role="system", content=thinking_prompt.getvalue())
 
@@ -59,13 +65,6 @@ class Thinking:
         new_system_prompt.write("et reformule ton exercice si necessaire\n")
         new_system_prompt.write(f"REMARQUES DE L'ELEVE\n{SEPARATOR}")
         new_system_prompt.write(f"{reflexion.get('content')}\n")
-        new_system_prompt.write(f"FORMAT DE TA REPONSE\n{SEPARATOR}")
-        new_system_prompt.write(
-            "Répond en utilisant strictement le format d'exercice\n"
-        )
-        new_system_prompt.write(
-            f"Respecte les '{SEPARATOR}' contenus, n'ajoute pas de balises '<></>'\n"
-        )
 
         prompt.append(
             OpenAiMessage(role="system", content=new_system_prompt.getvalue())

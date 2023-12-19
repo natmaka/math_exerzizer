@@ -51,3 +51,15 @@ def test_verif_end_double_fail():
     assert corrected.split("\n")[-1] == ""
     assert corrected.split("\n")[-2] == UNDERLINE[:-1]
     assert corrected.split("\n")[-3] != UNDERLINE[:-1]
+
+
+def test_verif_tags():
+    """Test if the exercice contains <> tags"""
+    fail_path = Path(__file__).parent.parent / "data" / "tags_exo.txt"
+    with open(fail_path, "r", encoding="utf-8") as f:
+        exercice = f.read()
+
+    corrected = verif_exercice(exercice)
+
+    assert "<" not in corrected
+    assert ">" not in corrected

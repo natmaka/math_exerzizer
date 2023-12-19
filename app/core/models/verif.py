@@ -1,5 +1,6 @@
 """Verify if the exercice is valid"""
 import logging
+import re
 from app.core.constants import UNDERLINE
 
 logger = logging.getLogger(__name__)
@@ -20,11 +21,15 @@ def is_valid_exercice(exercice: str) -> bool:
 def verif_exercice(exercice: str) -> str:
     """Verify if the exercice is valid"""
 
-    if is_valid_exercice(exercice):
-        return exercice
-
     exercice_splited = exercice.split("\n")
     corrected_exercice = exercice
+
+    if re.search(r"<.*?>", exercice):
+        logger.warning("The exercice contains <> tags")
+        corrected_exercice = re.sub(r"<.*?>", "", corrected_exercice)
+
+    if is_valid_exercice(exercice):
+        return exercice
 
     count_back_n_at_the_end = 0
     for text in exercice_splited[::-1]:

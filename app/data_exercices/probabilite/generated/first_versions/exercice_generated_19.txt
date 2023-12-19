@@ -1,0 +1,41 @@
+$-----$
+ENONCE
+$-----$
+Au supermarché, Lisa achète 5 kilogrammes de pommes pour 7,50 €.
+$-----$
+QUESTION 1
+$-----$
+Quel est le prix d'1 kilogramme de pommes ?
+$-----$
+QUESTION 2
+$-----$
+Combien coûteraient 3 kilogrammes de pommes ?
+$-----$
+QUESTION 3
+$-----$
+Si Lisa a 15 €, combien de kilogrammes de pommes peut-elle acheter au maximum ?
+$-----$
+REPONSE 1
+$-----$
+1.5
+$-----$
+EXPLICATION 1
+$-----$
+Le prix d'1 kilogramme de pommes est 7,50 € / 5 = 1,5 €.
+$-----$
+REPONSE 2
+$-----$
+4.5
+$-----$
+EXPLICATION 2
+$-----$
+3 kilogrammes de pommes coûteraient 3 * 1,5 = 4,5 €.
+$-----$
+REPONSE 3
+$-----$
+10
+$-----$
+EXPLICATION 3
+$-----$
+Avec 15 €, Lisa pourrait acheter 15 / 1,5 = 10 kilogrammes de pommes.
+$-----$

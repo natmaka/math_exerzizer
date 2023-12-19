@@ -1,0 +1,31 @@
+$-----$
+ENONCE
+$-----$
+Un peintre est engagé pour peindre un immeuble. Il peut peindre 2,5 mètres carrés en 1 heure. 
+Il travaille 8 heures par jour.
+$-----$
+QUESTION 1
+$-----$
+Combien de mètres carrés peint-il en une journée ?
+$-----$
+QUESTION 2
+$-----$
+Il doit peindre un immeuble de 120 mètres carrés, combien de jours cela lui prendra-t-il ?
+$-----$
+REPONSE 1
+$-----$
+20
+$-----$
+EXPLICATION 1
+$-----$
+La surface peinte est proportionnelle au temps. Le coefficient de proportionnalité est 2,5 m²/heure.
+Donc en une journée de 8 heures, il peint 2,5 * 8 = 20 m².
+$-----$
+REPONSE 2
+$-----$
+6
+$-----$
+EXPLICATION 2
+$-----$
+Si le peintre peint 20 m² par jour, pour peindre un immeuble de 120 m², il lui faudra 120 / 20 = 6 jours.
+$-----$

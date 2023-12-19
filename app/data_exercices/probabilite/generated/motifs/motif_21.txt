@@ -1,0 +1,23 @@
+Je comprends l'énoncé et les questions. 
+Concernant les réponses, je suis d'accord avec la première réponse et son explication, 
+elles démontrent bien une compréhension du problème de proportionnalité. 
+Cependant, je pense que la deuxième réponse est incorrecte. 
+En effet, l'explication de la réponse suggère que pour courir 21 km à une vitesse 
+de 5 km per 30 minutes, cela prendrait 126 minutes. 
+Cependant, à ce rythme, cela devrait prendre (21 km/5 km) * 30 minutes = 126 minutes 
+ce qui est correct. Pourtant, la réponse devrait donc être 126 minutes et non 21 km. 
+
+De mon point de vue, l'énoncé pourrait préciser que la vitesse de course est constante,
+car dans la réalité, la vitesse peut varier. 
+En outre, bien que l'énoncé déclare que "ils courent en moyenne 5 km en 30 minutes", 
+pour les questions de proportionnalité comme celle-ci, cela implique que leur 
+vitesse est constante, ce qui peut ne pas être immédiatement clair pour certains élèves. 
+
+Les questions, cependant, me semblent suffisamment explicites et elles proposent 
+un bon challenge pour comprendre le concept de proportionnalité lié à la vitesse, 
+au temps, et à la distance parcourue.
+
+En fin de compte, je pense que les énoncés sont compréhensibles 
+mais qu'ils pourraient être améliorés pour plus de clarté. 
+De plus, la deuxième réponse doit être corrigée pour correspondre 
+à l'unité de mesure demandée qui est le temps (en minutes) et non la distance (en km).
