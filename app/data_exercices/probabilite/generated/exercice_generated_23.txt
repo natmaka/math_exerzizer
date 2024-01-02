@@ -1,0 +1,42 @@
+
+$-----$
+ENONCE
+$-----$
+La famille Dupont prévoit de rénover leur maison et le coût des travaux est proportionnel à la surface rénovée. Pour une surface de 40 m^2, ils doivent débourser 1500 €.
+$-----$
+QUESTION 1
+$-----$
+Si la famille Dupont décide de rénover une surface de 100 m^2, combien cette rénovation leur coûterait-elle?
+$-----$
+QUESTION 2
+$-----$
+Si la famille Dupont a un budget de 4000 € pour les travaux, quelle serait alors la taille maximale de la surface qu'ils pourraient rénover?
+$-----$
+QUESTION 3
+$-----$
+Imagine que la famille Dupont envisage de rénover une pièce d'une superficie de 70 m^2. Estime le coût de cette rénovation.
+$-----$
+REPONSE 1
+$-----$
+3750
+$-----$
+EXPLICATION 1
+$-----$
+La rénovation coûte 1500 € pour 40 m², soit un coût de 37,50 € par m². Ainsi, pour une surface de 100 m², le coût serait de 100 * 37,50 = 3750 €.
+$-----$
+REPONSE 2
+$-----$
+107
+$-----$
+EXPLICATION 2
+$-----$
+Le coût de la rénovation est de 37,50 € par m². Donc, avec un budget de 4000 €, ils pourraient rénover une surface de 4000 / 37,50 = 106,67 m² que nous arrondissons à 107 m² pour plus de réalisme.
+$-----$
+REPONSE 3
+$-----$
+2625
+$-----$
+EXPLICATION 3
+$-----$
+Si la famille Dupont décide de rénover une pièce de 70 m², le coût serait de 70 * 37,50 = 2625 €.
+$-----$

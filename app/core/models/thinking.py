@@ -38,6 +38,10 @@ class Thinking:
             "Est-ce qu'une confusion est-elle possible sur les unités ?\n"
         )
         thinking_prompt.write("Les questions sont elles suffisamment explicites ?\n")
+        thinking_prompt.write("Chaque question demande-t-elle une unique réponse ?\n")
+        thinking_prompt.write(
+            "Ces réponses sont-elles uniquement des entiers ou des décimaux ?\n"
+        )
 
         return OpenAiMessage(role="system", content=thinking_prompt.getvalue())
 

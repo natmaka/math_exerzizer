@@ -1,0 +1,30 @@
+
+$-----$
+ENONCE
+$-----$
+Lors d'une vente de gâteaux pour financer une sortie scolaire, chaque gâteau est vendu à 3€. Tombant sur une bonne série d'acheteurs, l'école a réussi à vendre 45 gâteaux et a donc collecté 135€.
+$-----$
+QUESTION 1
+$-----$
+Si l'école avait vendu 75 gâteaux, combien d'argent aurait-elle collecté ?
+$-----$
+QUESTION 2
+$-----$
+Si l'école avait collecté 210€, combien de gâteaux auraient été vendus ?
+$-----$
+REPONSE 1
+$-----$
+225
+$-----$
+EXPLICATION 1
+$-----$
+Le coût des gâteaux est proportionnel au nombre de gâteaux. Si on vend 1 gâteau à 3 euros, alors 75 gâteaux coûteront 75 * 3 = 225 euros.
+$-----$
+REPONSE 2
+$-----$
+70
+$-----$
+EXPLICATION 2
+$-----$
+Si un gâteau coûte 3 euros, alors en divisant l'argent que l'école a collecté (210€) par le coût d'un gâteau (3€), on obtient le nombre de gâteaux vendus soit 210 / 3 = 70 gâteaux.
+$-----$

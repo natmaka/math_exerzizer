@@ -1,0 +1,7 @@
+Le problème posé ici est assez simple et bien formulé, il porte sur une règle de trois, ce qui est courant en mathématiques. Cependant, je pense qu'il manque un peu de complexité. En effet, il serait peut-être intéressant d'ajouter une dimension plus problematique à ce problème. Par exemple, prendre en compte les coûts de réalisation des gâteaux pour approcher une situation réelle. Cela permettrait également d'introduire la notion de bénéfice, qui est fondamentale en économie.
+
+En ce qui concerne les réponses données, elles sont correctes. Néanmoins, j'estime que les explications pourraient être plus détaillées. Sur la première question, peut-être pourrais-tu expliquer davantage comment une multiplication sert à calculer le total. Pour la deuxième question, également, je pense qu'il serait utile de rajouter que cette division sert à trouver combien de fois un nombre est contenu dans un autre.
+
+En ce qui concerne les unités, tout est clair : euros pour l'argent et gâteaux pour la quantité. Aucune confusion n'est possible.
+
+Enfin, je pense que les questions sont suffisamment explicites. Elles sont directement en lien avec l'énoncé et ne demandent pas de faire des déductions supplémentaires. Néanmoins, elles pourraient être un peu plus orientées "problème". Par exemple "Combien d'argent manquerait-il si l'école avait vendu seulement 75 gâteaux ?" ou "Combien de gâteaux supplémentaires aurait-il fallu vendre pour atteindre 210€?" Cela donnerait une dimension plus concrète et stimulante à l'exercice.

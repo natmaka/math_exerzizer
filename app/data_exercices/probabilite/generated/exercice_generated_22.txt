@@ -1,0 +1,37 @@
+
+$-----$
+ENONCE
+$-----$
+Lors d'une vente de gâteaux pour financer une sortie scolaire, chaque gâteau est vendu à 3€. 
+Pour réaliser ces gâteaux, l'école doit dépenser 1€ par gâteau.
+Tombant sur une bonne série d'acheteurs, l'école a réussi à vendre 45 gâteaux et a donc collecté 135€.
+$-----$
+QUESTION 1
+$-----$
+Si l'école avait vendu 75 gâteaux, combien d'argent l'école aurait-elle collecté et quel aurait été le bénéfice ?
+$-----$
+QUESTION 2
+$-----$
+Pour atteindre un bénéfice de 210€, combien de gâteaux l'école devra vendre ?
+$-----$
+REPONSE 1
+$-----$
+150
+$-----$
+EXPLICATION 1
+$-----$
+Le coût des gâteaux est proportionnel au nombre de gâteaux. Si on vend 1 gâteau à 3 euros, alors 75 gâteaux coûteront 75 * 3 = 225 euros. 
+Mais il ne faut pas oublier les frais de réalisation des gâteaux. Si un gâteau coûte 1 euro à réaliser, alors la création de 75 gâteaux coûtera 75*1=75 euros.
+Le bénéfice est alors calculé par la différence entre ce que l'école a collecté et ce que la création des gâteaux lui a coûté. Soit 225 – 75 = 150 euros de bénéfice.
+$-----$
+REPONSE 2
+$-----$
+105
+$-----$
+EXPLICATION 2
+$-----$
+Dans ce cas, on sait que le bénéfice que l'on souhaite est de 210€.
+On sait que pour chaque gâteau vendu, l'école gagne 3€ - 1€ (coût de réalisation) = 2€ de bénéfice.
+Il suffit donc de diviser le bénéfice souhaité par le bénéfice généré par la vente de chaque gâteau : 210 / 2 = 105.
+L'école doit donc vendre 105 gâteaux pour obtenir un bénéfice de 210€.
+$-----$

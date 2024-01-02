@@ -1,0 +1,18 @@
+Je comprends l'énoncé et les questions. L'énoncé est clair que le coût de la rénovation est proportionnel à la surface rénovée. De plus, il donne un exemple spécifique - 
+le coût de rénovation pour 40 m² est de 1500€.
+
+La première question est très explicite car elle mentionne "le coût pour une surface rénovée de 100 m²".
+ Pour ça, je suis d'accord avec la réponse de 3750€, et l'explication est correcte aussi.
+
+La seconde question est aussi explicite, "Pour quelle surface rénovée le coût serait de 4000 €?". La réponse fournie est 106.67,
+ mais cette réponse pourrait être trompeuse. Bien que les calculs soient corrects,
+  un chiffre à deux chiffres après la virgule pour une surface en m² peut sembler bizarre en pratique. 
+  Normalement, on présente la mesure d'une surface en nombres entiers ou à une décimale près.
+   Donc, je suggère que l'arrondissement soit revisité pour adopter un standard commun.
+
+Je ne pense pas qu'il y ait de confusion possible concernant les unités car elles sont explicitement mentionnées à chaque fois, à savoir l'euro (€) pour le coût et le mètre carré (m²) 
+pour la surface.
+
+Les questions sont à mon avis suffisamment explicites.
+ Cependant, un élargissement possible pourrait être d'ajouter plus de contexte ou une question ou deux pour tester des connaissances supplémentaires, 
+ comme demander à l'élève de faire une prévision de coût pour une surface qui n'est pas un multiple exact de 40 m².

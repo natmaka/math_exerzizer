@@ -1,0 +1,33 @@
+
+$-----$
+ENONCE
+$-----$
+Une famille décide de faire une rénovation de leur maison. Le coût de la rénovation est proportionnel à la surface rénovée.
+Pour une surface de 40 m^2, le coût est de 1500 €.
+$-----$
+QUESTION 1
+$-----$
+Quel serait le coût pour une surface rénovée de 100 m^2?
+$-----$
+QUESTION 2
+$-----$
+Pour quel surface rénovée le coût serait de 4000 €?
+$-----$
+REPONSE 1
+$-----$
+3750
+$-----$
+EXPLICATION 1
+$-----$
+On cherche le coût pour une surface de 100 m². Le ratio de proportionnalité est 1500/40 = 37,50 € par m².
+Donc pour une surface de 100 m², le coût sera de 100 * 37,50 = 3750 €.
+$-----$
+REPONSE 2
+$-----$
+106.66666666666667
+$-----$
+EXPLICATION 2
+$-----$
+On cherche la surface pour un coût de 4000 €. Le ratio de proportionnalité est 1500/40 = 37,50 € par m².
+Donc pour un coût de 4000 €, la surface rénovée sera de 4000 / 37,50 = 106,67 m² (arrondi à deux chiffres après la virgule).
+$-----$
