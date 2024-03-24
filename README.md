@@ -1,41 +1,39 @@
-# App créateur d'exercices de mathématiques
+# API de création d'exercices de mathématiques
 
-Une application qui permet de généré des exercices de mathématiques à volonté.
+Ce logiciel construit des exercices de mathématiques. Il est utilisable via son API.
 
 ## Contenu du dépôt
 
-Ce dépôt contient le code source de l'application.
-Elle est développée en Python et elle utilise une base de données d'exercices pour générer des exercices avec l'IA.
+Ce dépôt contient le code source de l'application. Elle est développée en Python et utilise une base de données d'exercices modifiés par l'IA.
 
 ## Utilisation
 
-1. Clonez le dépôt, renommer le, et placez vous dedans `cd votre-dossier`
-2. Créer un environnement virtuel avec :
+1. Clonez le dépôt, renommez-le, puis vous placer dans son répertoire: `cd votre-dossier`
+2. Créez un environnement virtuel avec :
 ```bash
 python -m venv env
 ```
-3. Activer votre environnement virtuel :
+3. Activez votre environnement virtuel :
  ```bash 
- windows : env\Script\activate
- linux : source env/bin/activate
+ Windows : env\Script\activate
+ Linux : source env/bin/activate
  ```
-4. Installez les dépendances en exécutant :
+4. Installez les dépendances:
 ```bash
 pip install -r requirements.txt
 ```
-5. Créer un fichier `.env` à la racine du projet et ajouter les variables d'environnement suivantes :
+5. Créez un fichier `.env` à la racine du projet et étalissez les variables d'environnement nécessaires:
 ```bash 
 OPENAI_API_KEY="votre clé API"
-FLASK_APP="app\\route.py" // sur windows
+FLASK_APP="app\\route.py" // sur Windows
 ```
-
-6. Lancez votre application Python, les points d'entrées sont :
-    - `flask run` pour lancer le serveur flask
-    - `app/main.py` pour lancer en python
+6. Lancez l'application Python. Ses points d'entrée sont :
+    - `flask run` pour lancer le serveur Flask
+    - `app/main.py` pour lancer en Python
 
 ## Contribution
 
-Contributions, problèmes et demandes de fonctionnalités sont les bienvenus !
+Contribution, description de problème et demande de fonctionnalité sont les bienvenus !
 
 ## Licence
 
